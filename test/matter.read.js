@@ -26,7 +26,8 @@ describe('.read', function() {
 
     assert(file.hasOwnProperty('data'));
     assert.equal(file.data.root, '_gh_pages');
-
+    assert.equal(file.data.date, 'fail');
+    
     assert(file.hasOwnProperty('path'));
     assert(file.hasOwnProperty('content'));
     assert(file.hasOwnProperty('orig'));
